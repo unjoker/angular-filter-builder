@@ -1,0 +1,51 @@
+
+<ul class ="list-group">
+  
+  <li class="list-group-item list-group-item-secondary">
+    <div class="row row-eq-height"> 
+
+        <div class="col-xs-2 col-sm-2 col-md-3 col-lg-3">
+          <select class="form-control" (change)="onOperatorChanged($event.target.value)" >
+            <option>AND</option>
+            <option>OR</option>
+          </select>
+        </div>   
+
+        <div class="col">
+          <div class = "float-right">
+            <button (click)="addSingleCondition()" class="btn btn-primary " [disabled]="!this.conditions.isValid()">
+               Add condition
+                <i class="fas fa-plus"></i>              
+            </button>
+
+            <button (click)="addGroup()" class="btn btn-primary " [disabled]="!this.conditions.isValid()">  
+               Add group 
+                <i class="fas fa-plus"></i>  
+            </button>
+
+            <button class ="btn btn-primary " *ngIf="removable" (click)="this.remove()">
+              <span style="font-size: 1.5em;">
+                <i class="fas fa-trash-alt"></i>
+              </span>
+              <!-- Remove -->
+            </button>
+          </div>
+        </div>   
+
+    </div>
+  </li>
+
+  <li class="list-group-item" *ngFor="let aCondition of conditions">
+    <ng-container  
+      *ngTemplateOutlet="aCondition['add']==undefined? conditionTemplate : groupTemplate; context:{condition:aCondition}">
+    </ng-container>   
+  </li>
+</ul>
+
+<ng-template #conditionTemplate let-condition= "condition">   
+  <app-single-condition [fields]="fields" [condition]="condition" [removeFunction]="createRemover(condition)"></app-single-condition>     
+</ng-template>
+
+<ng-template #groupTemplate let-condition= "condition">
+  <app-group-condition [fields]="fields" [conditions]="condition" [removeFunction]="createRemover(condition)"></app-group-condition>
+</ng-template>

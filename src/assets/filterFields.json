@@ -1,0 +1,5 @@
+[
+    {"name":"birthday", "displayName":"Birthday", "type":"date"}, 
+    {"name":"name", "displayName":"Name", "type":"string"},
+    {"name":"age", "displayName":"Age", "type":"number"}
+]

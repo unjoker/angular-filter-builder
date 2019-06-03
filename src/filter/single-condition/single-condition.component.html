@@ -1,0 +1,27 @@
+
+  <div class="row row-eq-height">
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+      <select class="form-control" (change)="onFieldSelected($event.target.value)">
+        <option *ngFor="let field of fields; index as idx" [value]="idx">{{field.displayName}}</option>
+      </select>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+    <select class="form-control" (change)="activatePredicate($event.target.value)">
+        <option *ngFor="let predicate of getPredicatesNames()">{{predicate}}</option>
+    </select>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+      <ng-container #predicateContainer></ng-container>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+      <button class ="btn btn-outline-primary" *ngIf="removable" (click)="remove()">
+        <span style="font-size: 1.5em; color: Dodgerblue;">
+          <i class="fas fa-trash-alt"></i>
+        </span>
+        <!-- Remove -->
+      </button>
+    </div>
+  </div>
