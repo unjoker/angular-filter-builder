@@ -10,12 +10,71 @@ Copy into your project
 
 ```angular
 import  {FilterComponent  }  from  '../filter/filter.component';
-
 import  {  FilteringField  }  from  '../filter/condition';
-
 import  {  FilterFieldsService  }  from  './filter-fields.service';
-
 import  {  ODataExpressionBuilder,  DefaultExpressionBuilder  }  from  '../filter/expressionBuilders';
+
+  
+
+@Component({
+
+selector:  'my-app',
+
+templateUrl:  './app.component.html',
+
+styleUrls:  [  './app.component.css'  ]
+
+})
+
+export  class  AppComponent  {
+
+@ViewChild("filter") filter:FilterComponent;
+
+fieldsMetadata:FilteringField[];
+
+odataQuery:string;
+
+normalQuery:string;
+
+  
+
+constructor(filterService:FilterFieldsService){
+
+filterService.getFields().subscribe(result=>this.fieldsMetadata =result);
+
+}
+
+  
+
+search():void  {
+
+let odataExpressionBuilder =  new  ODataExpressionBuilder();
+
+this.filter.buildExpression(odataExpressionBuilder);
+
+this.odataQuery = odataExpressionBuilder.BuildExpression();
+
+  
+
+let normalExpressionBuilder =  new  DefaultExpressionBuilder();
+
+this.filter.buildExpression(normalExpressionBuilder);
+
+this.normalQuery = normalExpressionBuilder.BuildExpression();
+
+}
+
+  
+
+clearFilters():void  {
+
+this.filter.clear();
+
+}
+
+  
+
+}
 ```
 
 ## Contributing
@@ -26,5 +85,5 @@ Please make sure to update tests as appropriate.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NjI1OTg1MCwxOTU1MTA4NzY1XX0=
+eyJoaXN0b3J5IjpbLTEyMjExNTc2MjAsMTk1NTEwODc2NV19
 -->
