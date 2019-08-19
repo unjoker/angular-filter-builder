@@ -52,36 +52,28 @@ clearFilters():void  {
 </div>
 <!-- Buttons -->
 <div  class="well">
-<div #footer  class="row row-eq-height">
-	<div  class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		<div  class="marginElement">
-			<button  class="btn btn-primary fitcontainer pointer" (click)="search()">
-			Search
-			<span  class="fa fa-search"></span>
-			</button>
+	<div #footer  class="row row-eq-height">
+		<div  class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<div  class="marginElement">
+				<button  class="btn btn-primary fitcontainer pointer" (click)="search()">
+				Search
+				<span  class="fa fa-search"></span>
+				</button>
+			</div>
+		</div>
+		<div  class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<div  class="marginElement">
+				<button  class="btn btn-primary fitcontainer pointer" (click)="clearFilters()">
+				Clear Results
+				</button>
+			</div>
 		</div>
 	</div>
-<div  class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-<div  class="marginElement">
-	<button  class="btn btn-primary fitcontainer pointer" (click)="clearFilters()">
-	Clear Results
-	</button>
 </div>
-
-</div>
-
-</div>
-
-</div>
-
 <div>
-
-<h3>Generated queries</h3>
-
-<p>Normal Query: {{normalQuery}}</p>
-
-<p>OData Query: {{odataQuery}}</p>
-
+	<h3>Generated queries</h3>
+	<p>Normal Query: {{normalQuery}}</p>
+	<p>OData Query: {{odataQuery}}</p>
 </div>
 ```
 
@@ -93,5 +85,5 @@ Please make sure to update tests as appropriate.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MzU0MTEyOCwxOTU1MTA4NzY1XX0=
+eyJoaXN0b3J5IjpbLTE5NzU4NzU4MDAsMTk1NTEwODc2NV19
 -->
