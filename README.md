@@ -9,8 +9,8 @@ Copy into your project
 ## Usage
 
 ```typescript
-
-import  {FilterComponent  }  from  '../filter/filter.component';
+import  {  Component,ViewChild,  AfterContentChecked  }  from  '@angular/core';
+import  {  FilterComponent  }  from  '../filter/filter.component';
 import  {  FilteringField  }  from  '../filter/condition';
 import  {  FilterFieldsService  }  from  './filter-fields.service';
 import  {  ODataExpressionBuilder,  DefaultExpressionBuilder  }  from  '../filter/expressionBuilders';
@@ -26,7 +26,7 @@ export  class  AppComponent  {
 	odataQuery:string;
 	normalQuery:string; 
 
-constructor(filterService:FilterFieldsService){
+constructor(){
 	filterService.getFields().subscribe(result=>this.fieldsMetadata =result);
 }
 
@@ -88,5 +88,5 @@ Please make sure to update tests as appropriate.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2Mzk1NTQyLDE5NTUxMDg3NjVdfQ==
+eyJoaXN0b3J5IjpbNzU5Njc0NzkxLDE5NTUxMDg3NjVdfQ==
 -->
