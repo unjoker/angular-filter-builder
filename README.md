@@ -48,6 +48,7 @@ clearFilters():void  {
 }
 ```
 
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
@@ -56,5 +57,5 @@ Please make sure to update tests as appropriate.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzM4NDAzMDEsMTk1NTEwODc2NV19
+eyJoaXN0b3J5IjpbLTc4Nzc2NzEwMywxOTU1MTA4NzY1XX0=
 -->
