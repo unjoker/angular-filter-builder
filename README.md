@@ -47,31 +47,18 @@ clearFilters():void  {
 ```
 ```html
 <h1>Query builder control - test form</h1>
-
 <div  class="form-group">
-
-<mc-filter [fields]="fieldsMetadata" #filter></mc-filter>
-
+	<mc-filter [fields]="fieldsMetadata" #filter></mc-filter>
 </div>
-
 <!-- Buttons -->
-
 <div  class="well">
-
 <div #footer  class="row row-eq-height">
-
 <div  class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-
 <div  class="marginElement">
 
-&nbsp;
-
 <button  class="btn btn-primary fitcontainer pointer" (click)="search()">
-
 Search
-
 <span  class="fa fa-search"></span>
-
 </button>
 
 </div>
@@ -117,5 +104,5 @@ Please make sure to update tests as appropriate.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTQ5MDE0ODgsMTk1NTEwODc2NV19
+eyJoaXN0b3J5IjpbNjUwMDUwMjIyLDE5NTUxMDg3NjVdfQ==
 -->
