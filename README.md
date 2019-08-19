@@ -4,11 +4,7 @@ Filter Builder is an angular module that allows the creation of filter expressio
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
-```bash
-pip install foobar
-```
+Copy into your project
 
 ## Usage
 
@@ -27,3 +23,6 @@ Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTk1NTEwODc2NV19
+-->
