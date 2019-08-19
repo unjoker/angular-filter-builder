@@ -27,7 +27,7 @@ export  class  AppComponent  {
 	normalQuery:string; 
 
 constructor(){
-	filterService.getFields().subscribe(result=>this.fieldsMetadata =result);
+	this.fieldsMetadata = 
 }
 
 search():void  {
@@ -88,5 +88,5 @@ Please make sure to update tests as appropriate.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU5Njc0NzkxLDE5NTUxMDg3NjVdfQ==
+eyJoaXN0b3J5IjpbMTM3MDI0ODc3LDE5NTUxMDg3NjVdfQ==
 -->
