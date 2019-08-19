@@ -9,11 +9,13 @@ Copy into your project
 ## Usage
 
 ```angular
-import foobar
+import  {FilterComponent  }  from  '../filter/filter.component';
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+import  {  FilteringField  }  from  '../filter/condition';
+
+import  {  FilterFieldsService  }  from  './filter-fields.service';
+
+import  {  ODataExpressionBuilder,  DefaultExpressionBuilder  }  from  '../filter/expressionBuilders';
 ```
 
 ## Contributing
@@ -24,5 +26,5 @@ Please make sure to update tests as appropriate.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NTEwODc2NV19
+eyJoaXN0b3J5IjpbLTc1NjI1OTg1MCwxOTU1MTA4NzY1XX0=
 -->
