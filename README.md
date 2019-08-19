@@ -29,8 +29,6 @@ constructor(filterService:FilterFieldsService){
 	filterService.getFields().subscribe(result=>this.fieldsMetadata =result);
 }
 
-  
-
 search():void  {
 	let odataExpressionBuilder =  new  ODataExpressionBuilder();
 	this.filter.buildExpression(odataExpressionBuilder);
@@ -47,7 +45,69 @@ clearFilters():void  {
 
 }
 ```
+```html
+<h1>Query builder control - test form</h1>
 
+<div  class="form-group">
+
+<mc-filter [fields]="fieldsMetadata" #filter></mc-filter>
+
+</div>
+
+<!-- Buttons -->
+
+<div  class="well">
+
+<div #footer  class="row row-eq-height">
+
+<div  class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+<div  class="marginElement">
+
+&nbsp;
+
+<button  class="btn btn-primary fitcontainer pointer" (click)="search()">
+
+Search
+
+<span  class="fa fa-search"></span>
+
+</button>
+
+</div>
+
+</div>
+
+<div  class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+<div  class="marginElement">
+
+&nbsp;
+
+<button  class="btn btn-primary fitcontainer pointer" (click)="clearFilters()">
+
+Clear Results
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+<h3>Generated queries</h3>
+
+<p>Normal Query: {{normalQuery}}</p>
+
+<p>OData Query: {{odataQuery}}</p>
+
+</div>
+```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
@@ -57,5 +117,5 @@ Please make sure to update tests as appropriate.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4Nzc2NzEwMywxOTU1MTA4NzY1XX0=
+eyJoaXN0b3J5IjpbLTE0NTQ5MDE0ODgsMTk1NTEwODc2NV19
 -->
