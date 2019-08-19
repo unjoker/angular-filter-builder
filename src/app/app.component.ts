@@ -1,8 +1,8 @@
 import { Component,ViewChild, AfterContentChecked } from '@angular/core';
 import {FilterComponent } from '../filter/filter.component';
-import { FilteringField } from 'src/filter/condition';
+import { FilteringField } from '../filter/condition';
 import { FilterFieldsService } from './filter-fields.service';
-import { ODataExpressionBuilder, DefaultExpressionBuilder } from 'src/filter/expressionBuilders';
+import { ODataExpressionBuilder, DefaultExpressionBuilder } from '../filter/expressionBuilders';
 
 @Component({
   selector: 'my-app',

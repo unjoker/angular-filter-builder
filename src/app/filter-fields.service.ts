@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {Http} from '@angular/http';
-import { FilteringField } from 'src/filter/condition';
+import { FilteringField } from '../filter/condition';
 import { Observable } from 'rxjs';
 
 @Injectable({
