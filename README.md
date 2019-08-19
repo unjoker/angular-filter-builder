@@ -27,7 +27,11 @@ export  class  AppComponent  {
 	normalQuery:string; 
 
 constructor(){
-	this.fieldsMetadata = 
+	this.fieldsMetadata = new Array<FilteringField>(
+			FilteringField.CreateDate("birthday",  "Birthday"),
+			FilteringField.CreateString("name",  "Name"),
+			FilteringField.CreateNumeric("age",  "Age")
+		); 
 }
 
 search():void  {
@@ -88,5 +92,6 @@ Please make sure to update tests as appropriate.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MDI0ODc3LDE5NTUxMDg3NjVdfQ==
+eyJoaXN0b3J5IjpbLTEzNDI0MDQwMTMsMTM3MDI0ODc3LDE5NT
+UxMDg3NjVdfQ==
 -->
