@@ -7,7 +7,7 @@ Filter Builder is an angular module that allows the creation of filter expressio
 Copy into your project
 
 ## Usage
-
+Component
 ```typescript
 import  {  Component,ViewChild,  AfterContentChecked  }  from  '@angular/core';
 import  {  FilterComponent  }  from  '../filter/filter.component';
@@ -50,6 +50,7 @@ clearFilters():void  {
 
 }
 ```
+
 ```html
 <h1>Query builder control - test form</h1>
 <div  class="form-group">
@@ -92,6 +93,6 @@ Please make sure to update tests as appropriate.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDI0MDQwMTMsMTM3MDI0ODc3LDE5NT
-UxMDg3NjVdfQ==
+eyJoaXN0b3J5IjpbMTg4MDk2NzAyNCwxMzcwMjQ4NzcsMTk1NT
+EwODc2NV19
 -->
