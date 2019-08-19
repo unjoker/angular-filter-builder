@@ -50,7 +50,7 @@ clearFilters():void  {
 
 }
 ```
-
+Template
 ```html
 <h1>Query builder control - test form</h1>
 <div  class="form-group">
@@ -93,6 +93,6 @@ Please make sure to update tests as appropriate.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MDk2NzAyNCwxMzcwMjQ4NzcsMTk1NT
-EwODc2NV19
+eyJoaXN0b3J5IjpbNzQ4OTkyMjc4LDEzNzAyNDg3NywxOTU1MT
+A4NzY1XX0=
 -->
