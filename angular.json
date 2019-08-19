@@ -23,8 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "src/configurable-table/_content/modal.less"
+              "src/styles.css"
             ],
             "scripts": []
           },
